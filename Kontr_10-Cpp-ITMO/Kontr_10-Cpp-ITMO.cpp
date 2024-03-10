@@ -43,27 +43,27 @@ public:
         return chak_saids1;
     }
 
-    // Нахождение длины стороны 1_2 (от точек x1 y1 до точек x2 y2)
+    // Длина стороны 1_2 (от точек x1 y1 до точек x2 y2)
     double Side_1_2_Length() {
         return point_x1y1.DistanceTo(point_x2y2);
     }
 
-    //  Нахождение длины стороны 2_3 (от точек x2 y2 до точек x3 y3)
+    // Длина стороны 2_3 (от точек x2 y2 до точек x3 y3)
     double Side_2_3_Length() {
         return point_x2y2.DistanceTo(point_x3y3);
     }
 
-    //  Нахождение длины стороны 3_1 (от точек x3 y3 до точек x1 y1)
+    // Длина стороны 3_1 (от точек x3 y3 до точек x1 y1)
     double Side_3_1_Length() {
         return point_x3y3.DistanceTo(point_x1y1);
     }
 
-    // Нахождение периметра треугольника
+    // Периметр треугольника
     double Perimeter() {
         return side1_2 + side2_3 + side3_1;
     }
 
-    // Нахождение площади треугольника
+    // Площадь треугольника
     double Square() {
         double p = Perimeter() / 2;
         return sqrt( p * (p - side1_2) * (p - side2_3) * (p - side3_1)
@@ -104,27 +104,27 @@ public:
     bool chack() {
         return chak_saids2;
     }
-        // Нахождение длины стороны 1_2 (от точек x1 y1 до точек x2 y2)
+        // Длина стороны 1_2 (от точек x1 y1 до точек x2 y2)
     double Side_1_2_Length() {
         return point_x1y1.DistanceTo(point_x2y2);
     }
 
-    //  Нахождение длины стороны 2_3 (от точек x2 y2 до точек x3 y3)
+    // Длина стороны 2_3 (от точек x2 y2 до точек x3 y3)
     double Side_2_3_Length() {
         return point_x2y2.DistanceTo(point_x3y3);
     }
 
-    //  Нахождение длины стороны 3_1 (от точек x3 y3 до точек x1 y1)
+    // Длина стороны 3_1 (от точек x3 y3 до точек x1 y1)
     double Side_3_1_Length() {
         return point_x3y3.DistanceTo(point_x1y1);
     }
 
-    // Нахождение периметра треугольника
+    // Периметратреугольника
     double Perimeter() {
         return side1_2 + side2_3 + side3_1;
     }
 
-    // Нахождение площади треугольника
+    // Площадь треугольника
     double Square() {
         double p = Perimeter() / 2;
         return sqrt(p * (p - side1_2) * (p - side2_3) * (p - side3_1)
